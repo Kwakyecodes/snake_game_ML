@@ -1,0 +1,19 @@
+I trained the snake on how to locate the food at level 1.
+Observations:
+1. The snake dies less now 
+2. It is still unable to find the food
+3. It sometimes gets stuck in a two-way (sometimes four-way) loop 
+
+After a chat with chatgpt, I learned that the size of the data is too small for the complexity
+of the game. While considering the complexity of the data, I only considered the changing variables
+(increasing length of snake, changing positions of explosions, etc.). However, the size of the matrix
+itself is also quite big (4800; 60 * 80). Too big, 5000 data points is far from enough to expect any
+good performace from a cnn model. I was thinking about reducing the size of the screen (and thus the matrix)
+but a friend of mine (Jacques Asinyo) suggested just reducing the dimension of the matrix after data collection.
+The problem with what my friend suggested is that because of the small size of the objects (food = 1, snake = 3)
+and the numerous 0s in the data, reducing too much just results in zero matrices. 
+
+This is what I plan to do:
+1. Reduce the screen to a 6 * 8 one and train on that
+2. Change value of food and snake 500 and 750 respectfully. And then reduce the dimension of the collected data
+to like 8 * 10.

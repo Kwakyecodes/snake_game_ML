@@ -1,0 +1,5 @@
+I reduced the size of the game as a whole. The screen is now 60 by 80 and so the
+matrix is 6 by 8. The results were good: the snake is able to find and eat the food
+for a while (10 - 30). It sometimes run into 2-way loop still. My plan is to now
+increase the value of the food and the snake to give it more precendence over the 
+empty cells. I will also collect 10,000 data this time.

@@ -1,0 +1,6 @@
+I changed the head of the snake to 3 but that didn't seem to help much.
+I think this is because the snake needs enough data for each 
+level (age ~ length ~ number of segments) so that for each level it knows
+how to find the food and survive. Now I am just going to train the snake
+on how to locate the food at level 1 to see if it makes a difference in the
+first level at least.

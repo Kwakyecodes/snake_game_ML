@@ -1,0 +1,7 @@
+Objects'representation in matrix is just like it is in the Dijkstra game:
+snake, explosion -> 2, food -> 1, empty -> 0
+
+I think the problem with this is that since the whole body and even the bombs 2s
+in the matrix, it is difficult for the cnn model to differentiate which one is
+head from the rest of the body (and even the bombs). Additionally, it would be
+best to collect ample data on each level of the snake (level ~ length ~ age ~ number of segments)

@@ -1,0 +1,6 @@
+Objects'representation in matrix is just like it is in the Dijkstra game:
+snake, explosion -> 2, food -> 1, empty -> 0
+
+The problem with this is that most of the matrices (data points) that were appended
+into the training_data.pkl were duplicates. This is because anytime a change was 
+made to the matrix is reflected in all the other instances (in the list).
